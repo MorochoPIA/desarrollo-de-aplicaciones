@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Principal</title>
+</head>
+<body>
+    <h1>Bienvenido/a, {{ usuario.username }}!</h1>
+    
+    <!-- Renderizado condicional según el Rol asignado en el modelo Usuario -->
+    <p><strong>Tu rol en el sistema es:</strong> 
+        {% if usuario.es_admin %}
+            <span style="color: green;">Administrador</span>
+        {% else %}
+            <span style="color: blue;">Cliente</span>
+        {% endif %}
+    </p>
+
+    <hr>
+
+    <!-- Control de acceso por interfaz: Mostrar opciones exclusivas de Admin -->
+    {% if usuario.es_admin %}
+        <div style="background-color: #f0f0f0; padding: 10px;">
+            <h3>Sección Administrativa</h3>
+            <p>Acceso concedido a herramientas de gestión del sistema.</p>
+            <a href="/admin/">Ir al Panel de Administración Django</a>
+        </div>
+    {% else %}
+        <div style="background-color: #e8f4f8; padding: 10px;">
+            <h3>Sección de Cliente</h3>
+            <p>Bienvenido a tu panel de usuario estandar.</p>
+        </div>
+    {% endif %}
+
+    <br><br>
+    
+    <!-- Enlace para cerrar sesión -->
+    <a href="{% url 'logout' %}">Cerrar Sesión</a>
+</body>
+</html>
