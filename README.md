@@ -17,8 +17,6 @@ A continuación se presenta la infografía que resume el análisis de requisitos
   <img src="1.jpg" alt="Infografía del Proyecto" width="750px">
 </p>
 
-> **Documentación Completa:** Si deseas consultar el archivo original con todo detalle, puedes descargar o visualizar el PDF de la infografía directamente en este repositorio: [`infografia de desarrollo.pdf`](./onfografia%20de%20desarrollo.pdf).
-
 ---
 
 ## Metodología de Desarrollo en V: Rama Descendente (Fase de Verificación)
