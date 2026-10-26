@@ -1,4 +1,4 @@
-# 🚀 Proyecto Web: Sistema de Gestión Base (Módulo I)
+# Proyecto Web: Sistema de Gestión Base (Módulo I)
 **Subproyecto:** Desarrollo de Aplicaciones I  
 **Estudiante:** José Daniel Basto Méndez  
 **Profesor:** Rafael Barrios  
@@ -6,14 +6,24 @@
 
 ---
 
-## 📌 Descripción del Proyecto
-Este repositorio contiene la estructura inicial y los fundamentos de la aplicación web desarrollada para el subproyecto **Desarrollo de Aplicaciones I**. El proyecto integra un stack tecnológico moderno (**Python, Django, Vite.js y Docker**) siguiendo los principios de la **Metodología de Desarrollo en V**.
+## Descripción del Proyecto
+Comenzaremos con la estructura inicial y los fundamentos de la aplicación web desarrollada para el subproyecto **Desarrollo de Aplicaciones I**. El proyecto integra con el stack tecnológico(**Python, Django, Vite.js y Docker**) siguiendo los principios de la **Metodología de Desarrollo en V**.
+
+##  Material Visual: Metodología de Desarrollo en V (Fase de Verificación)
+
+A continuación se presenta la infografía que resume el análisis de requisitos, diseño de sistema, módulos y el punto de inflexión del proyecto:
+
+<p align="center">
+  <img src="1.jpg" alt="Infografía del Proyecto" width="750px">
+</p>
+
+> **Documentación Completa:** Si deseas consultar el archivo original con todo detalle, puedes descargar o visualizar el PDF de la infografía directamente en este repositorio: [`onfografia de desarrollo.pdf`](./onfografia%20de%20desarrollo.pdf).
 
 ---
 
-## 📐 Metodología de Desarrollo en V: Rama Descendente (Fase de Verificación)
+## Metodología de Desarrollo en V: Rama Descendente (Fase de Verificación)
 
-Para garantizar la calidad, mantenibilidad y coherencia en el desarrollo del software, el diseño y la implementación de esta aplicación están guiados por la **rama descendente del Modelo en V**. Esta fase se enfoca en la verificación conceptual y técnica antes de la entrega final.
+Esta metodologia nos garantizar calidad, mantenibilidad y coherencia en el desarrollo del software, . Esta fase se enfoca en la verificación conceptual y técnica antes de la entrega final.
 
 ```
        Rama Descendente (Diseño/Verificación)         |    Rama Ascendente (Pruebas/Validación)
@@ -30,19 +40,11 @@ Para garantizar la calidad, mantenibilidad y coherencia en el desarrollo del sof
 ### 1. Análisis de Requisitos (*Requirement Gathering*)
 En esta etapa inicial se identifican las necesidades del usuario final y los objetivos del sistema.
 * **Objetivo General:** Proveer una plataforma web escalable, segura y multi-rol para la gestión de usuarios y procesos clave.
-* **Requisitos Funcionales:**
-  * Registro de nuevos usuarios y sistema de autenticación seguro (Login / Logout).
-  * Panel de administración centralizado para la gestión de modelos y base de datos.
-  * Interfaz adaptativa con permisos y vistas personalizadas según el rol asignado.
-* **Requisitos No Funcionales:**
-  * Aislamiento del entorno de desarrollo mediante contenedores (**Docker**).
-  * Control de versiones distribuido (**Git / GitHub**).
-  * Respuestas rápidas de interfaz mediante empaquetamiento optimizado (**Vite.js**).
 * **Definición de Roles de Usuario:**
-  * 👑 **Administrador:** Control total sobre la base de datos, administración de usuarios y configuración del sistema.
-  * 🛠️ **Gestor:** Permisos avanzados para la gestión operativa y moderación de contenido/datos.
-  * 👤 **Usuario Registrado:** Acceso a su perfil personal y funcionalidades principales de la plataforma.
-  * 🌐 **Visitante (Público):** Acceso restringido únicamente a páginas públicas, login y registro.
+  *  **Administrador:** Control total sobre la base de datos, administración de usuarios y configuración del sistema.
+  *  **Gestor:** Permisos avanzados para la gestión operativa y moderación de contenido/datos.
+  *  **Usuario Registrado:** Acceso a su perfil personal y funcionalidades principales de la plataforma.
+  *  **Visitante (Público):** Acceso restringido únicamente a páginas públicas, login y registro.
 
 ---
 
@@ -61,10 +63,10 @@ Define el comportamiento general del software y la interacción entre sus compon
 Especifica la estructura global del software, los componentes principales y la selección del **Stack Tecnológico**.
 
 * **Stack de Desarrollo:**
-  * 🐍 **Backend:** Python 3.11 + Django Framework.
-  * ⚡ **Frontend / Build Tool:** Vite.js + HTML5 / CSS3 / JavaScript.
-  * 🐳 **Contenerización:** Docker & Docker Compose para un entorno virtual estándar y reproducible.
-  * 📦 **Base de Datos:** SQLite (Entorno de desarrollo local) / PostgreSQL (Preparado para producción).
+  * **Backend:** Python 3.11 + Django Framework.
+  * **Frontend / Build Tool:** Vite.js + HTML5 / CSS3 / JavaScript.
+  * **Contenerización:** Docker & Docker Compose para un entorno virtual .
+  * **Base de Datos:** SQLite (Entorno de desarrollo local) / PostgreSQL (Preparado para producción).
 * **Arquitectura de Software:**
   * Patrón **MVT (Model-View-Template)** propio de Django, desacoplando la lógica de datos, la lógica de negocio y la presentación visual.
 
@@ -92,9 +94,7 @@ El momento de transición donde las especificaciones teóricas se convierten en 
 
 ---
 
-## 💡 Nota sobre las Etapas Futuras: Pruebas y Validación
-
-Aunque el **Módulo I** se concentra en la **rama descendente (fase de diseño y codificación)**, es de suma importancia destacar que la fortaleza de la Metodología en V radica en su correlación directa con la **rama ascendente (fase de pruebas y validación)**:
+Aunque se trabaje  con la **rama descendente (fase de diseño y codificación)** es de suma importancia destacar que la fortaleza de la Metodología en V radica en su correlación directa con la **rama ascendente (fase de pruebas y validación)**:
 
 1. **Pruebas Unitarias (*Unit Testing*):** Corresponden al *Diseño de Módulos*. Verifican que cada función, vista o algoritmo individual funcione correctamente.
 2. **Pruebas de Integración (*Integration Testing*):** Corresponden al *Diseño de Arquitectura*. Aseguran que la comunicación entre Django, la base de datos y Vite.js sea estable.
@@ -102,24 +102,3 @@ Aunque el **Módulo I** se concentra en la **rama descendente (fase de diseño y
 4. **Pruebas de Aceptación y Validación (*Acceptance Testing & Validation*):** Corresponden al *Análisis de Requisitos*. Es el punto crucial donde se **valida con el usuario/profesor** que el producto final cumple con las necesidades reales planteadas al inicio del proyecto.
 
 ---
-
-## 🛠️ Instrucciones para Ejecutar el Proyecto con Docker
-
-1. **Clonar el repositorio:**
-   ```bash
-   git clone <URL-DE-TU-REPOSISTORIO>
-   cd <NOMBRE-DE-LA-CARPETA>
-   ```
-
-2. **Levantar el entorno con Docker:**
-   ```bash
-   docker-compose up --build
-   ```
-
-3. **Ejecutar migraciones de la base de datos:**
-   ```bash
-   docker-compose exec web python manage.py migrate
-   ```
-
-4. **Acceder a la aplicación:**
-   Abre tu navegador en `http://localhost:8000`.
